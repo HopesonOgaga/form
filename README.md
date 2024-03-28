@@ -99,3 +99,8 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+
+
+<section class=" flex flex-col items-center justify-center  w-full h-screen bg-red-300 border-2 border-solid border-white ">
+        <div class="info w-1/6 h-3/4  rounded-md  ">

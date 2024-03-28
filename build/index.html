@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/output.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/output.css" />
+    <style>
+        .info{
+            background-image: url("./images/bg-sidebar-desktop.svg");
+            background-repeat: no-repeat;
+            
+        }
+        @media only screen and (max-width: 600px) {
+         .info {
+              background-image: url(./images/bg-sidebar-mobile.svg);
+              background-size: cover;
+              background-repeat: no-repeat;
+      }
+}
+    </style>
+  </head>
+  <body>
     <header></header>
-    <main>
-        <section class="">
-
-        </section>
+    <main class=" ">   
+      <section class=" flex  md:flex-row flex-col items-center justify-center  w-full h-screen  border-2 border-solid border-white ">
+        <div class="info md:w-1/4 w-full md:h-3/4 h-full  rounded-md  flex md:flex-col gap-6 md:gap-10  py-6 md:pl-2 justify-center ">
+            <div class="flex  gap-4">
+                <div class="py-1  rounded-full bg-blue-300  border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">1</div>
+                <div class="hidden md:block">
+                    <p class="capitalize font-semibold text-lg text-blue-200 ">step 1</p>
+                    <p class="capitalize font-semibold text-xl text-gray-200 ">your info</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="py-1  rounded-full   border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">2</div>
+                <div class="hidden md:block">
+                    <p class="capitalize font-semibold text-lg text-blue-200 ">step 2</p>
+                    <p class="capitalize font-semibold text-xl text-gray-200 ">select plan</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="py-1  rounded-full   border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">3</div>
+                <div class="hidden md:block">
+                    <p class="capitalize font-semibold text-lg text-blue-200 ">step 3</p>
+                    <p class="capitalize font-semibold text-xl text-gray-200 ">adds-on</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="py-1  rounded-full   border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">4</div>
+                <div class="hidden md:block">
+                    <p class="capitalize font-semibold text-lg text-blue-200 ">step 4</p>
+                    <p class="capitalize font-semibold text-xl text-gray-200 ">summary</p>
+                </div>
+            </div>
+        </div>
+        <!-- form -->
+        <div>
+                <form class="max-w-sm mx-auto">
+                    <div class="mb-5">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+                    </div>
+                    <div class="mb-5">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                    <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                    </div>
+                    <div class="mb-5">
+                    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
+                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+                    </div>
+                    <div class="flex items-start mb-5">
+                    <div class="flex items-center h-5">
+                        <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                    </div>
+                    <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+                    </div>
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 capi">next</button>
+                </form>
+  
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
