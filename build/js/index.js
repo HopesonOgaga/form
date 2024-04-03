@@ -24,7 +24,3 @@ formButton.addEventListener("submit", function (e) {
   location.href = "./pick.html";
 });
 
-// document.getElementById("toggle").addEventListener("change", function () {
-//   const label = document.getElementById("toggleLabel");
-//   label.textContent = this.checked ? "Yearly" : "Month";
-// });
