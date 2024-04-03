@@ -33,14 +33,14 @@
                     </div>
                 </div>
                 <div class="flex gap-4">
-                    <div class="py-1  rounded-full bg-blue-300   border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">2</div>
+                    <div class="py-1  rounded-full   border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">2</div>
                     <div class="hidden md:block">
                         <p class="capitalize font-semibold text-lg text-blue-200 ">step 2</p>
                         <p class="capitalize font-semibold text-xl text-gray-200 ">select plan</p>
                     </div>
                 </div>
                 <div class="flex gap-4">
-                    <div class="py-1  rounded-full   border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">3</div>
+                    <div class="py-1  rounded-full bg-blue-300   border-2 border-solid border-white w-12 h-12 text-white  text-sm flex justify-center flex-col items-center shadow-sm ">3</div>
                     <div class="hidden md:block">
                         <p class="capitalize font-semibold text-lg text-blue-200 ">step 3</p>
                         <p class="capitalize font-semibold text-xl text-gray-200 ">adds-on</p>
@@ -57,46 +57,30 @@
 
             <!-- second div -->
 
-            <div class="  ">
-              <div class="mb-4 ml-4 mr-4 ">
-                <p class="font-bold capitalize text-2xl text-blue-300 py-2 ">select your plan</p>
-                <p class="font-semibold capitalize text-lg text-gray-200 py-2 ">you have the option of monethly or yearly billing</p>
-               </div>
-               <section class="flex gap-6 md:flex-row flex-col items-center   ">
-                    <div class="hover:border-red-300 active:border-red-300 border-2 border-solid shadow-md md:w-44 w-3/4  h-20  md:h-44 rounded-md border-blue-200 md:pl-6 pl-2  py-4 flex md:flex-col flex-row md:items-start   gap-8  ">
-                        <img class="w-12 h-12  " src="./images/icon-arcade.svg" alt="" srcset="">
-                          <div class="">
-                            <p class=" capitalize font-bold  text-xl text-blue-500 ">arcade</p>
-                            <p class="capitalize font-light text-lg text-blue-200 ">$9/mo</p>
-                          </div>
-                    </div>
-                 <!-- 2 -->
-                   <div class="hover:border-red-300 active:border-red-300 border-2 border-solid shadow-md md:w-44 w-3/4  h-20  md:h-44 rounded-md border-blue-200 md:pl-6 pl-2  py-4 flex md:flex-col flex-row md:items-start   gap-8  ">
-                        <img class="w-12 h-12  " src="./images/icon-advanced.svg" alt="" srcset="">
-                          <div class="">
-                            <p class=" capitalize font-bold  text-xl text-blue-500 ">advance</p>
-                            <p class="capitalize font-light text-lg text-blue-200 ">$9/mo</p>
-                          </div>
+            <div class=" flex flex-col gap-6  w-1/4 ">
+                    <div class=" pl-4 pr-4 w-full h-20  flex justify-between items-center  ps-4 border border-blue-300  rounded dark:border-blue-400  cursor-pointer  ">
+                     <div>
+                       <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-blueborder-blue-400  cursor-pointer   dark:border-gray-600">
                      </div>
-                 <!-- 3 -->
-                 <div class="hover:border-red-300 active:border-red-300 border-2 border-solid shadow-md md:w-44 w-3/4  h-20  md:h-44 rounded-md border-blue-200 md:pl-6 pl-2  py-4 flex md:flex-col flex-row md:items-start   gap-8  ">
-                      <img class="w-12 h-12  " src="./images/icon-pro.svg" alt="" srcset="">
-                        <div class="">
-                          <p class=" capitalize font-bold  text-xl text-blue-500 ">pro</p>
-                          <p class="capitalize font-light text-lg text-blue-200 ">$9/mo</p>
-                        </div>
-                 </div>
-               </section>
-               <!-- toggle -->
-               <section class="flex justify-center ">
-                <div class="flex items-center justify-center h-20 md:h-12  my-8 w-4/5 md:mt-8 mt-6 border-2 border-solid  shadow-md rounded-md bg-gray-200  ">
-                  <span class="text-xs mx-5 font-semibold text-blue-600 capitalize" id="toggleLabel">Month</span>
-                  <label for="toggle" class="flex items-center cursor-pointer">
-                    <input type="checkbox" id="toggle" class="sr-only peer">
-                    <div class="block relative bg-blue-900 w-16 h-9 p-1 rounded-full before:absolute before:bg-blue-600 before:w-7 before:h-7 before:p-1 before:rounded-full before:transition-all before:duration-500 before:left-1 peer-checked:before:left-8 peer-checked:before:bg-white"></div>
-                  </label>
-                </div>
-             </section>
+                     <div class="">
+                      <label for="bordered-checkbox-1" class=" py-4 ms-2   d text-blue-600 capitalize font-semibold text-lg">online service</label>
+                       <p class="font-semibold  text-xs capitalize text-gray-600 ">  Access to multiplayer games</p>
+                     </div>
+                     <div>
+                      <p  class="font-semibold  text-xs capitalize text-blue-600 ">
+                        +$1/mo
+                      </p>
+                     </div>
+                    </div>
+                    <div class="w-full flex items-center ps-4 border border-blue-300  rounded dark:border-blue-400  cursor-pointer  ">
+                      <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-blueborder-blue-400  cursor-pointer   dark:border-gray-600">
+                      <label for="bordered-checkbox-1" class=" py-4 ms-2   d text-blue-600 capitalize font-semibold text-sm">larger storage </label>
+                    </div>
+                    <div class="w-full flex items-center ps-4 border border-blue-300  rounded dark:border-blue-400  cursor-pointer  ">
+                      <input id="bordered-checkbox-1" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-blueborder-blue-400  cursor-pointer   dark:border-gray-600">
+                      <label for="bordered-checkbox-1" class=" py-4 ms-2   d text-blue-600 capitalize font-semibold text-sm">customiazable profile</label>
+                    
+                    </div>
              <!-- nav button -->
              <section class="h-3/5  flex justify-evenly mt-6 ">
               <div class="md:py-2 py-3">
